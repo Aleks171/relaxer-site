@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>RELAXER</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="top" class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <header>
+              <div class="col-lg-12">
+                <h1><a href="index.html">Relaxer</a></h1>
+                <p>Play! Watch! Relax!</p>
+              </div>
+            </header>
+          </div>
+        </div>  
+        <nav role="navigation" class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header header">
+              <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button> 
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li><a href="films.html">Фильмы</a></li>
+                <li><a href="#">Сериалы</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Рейтинги <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="rating.html">Рейтинги фильмов</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Рейтинги сериалов</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Рейтинги игр</a></li>
+                  </ul>
+                </li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div><!--row-->
+    </div><!--container-fluid-->
+            
+    <div class="container hidden-xs">
+      <div class="row">
+        <div class="col-sm-10 col-lg-8 col-sm-push-1 col-lg-push-2">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/battlefield1.png" alt="Battlefield">
+                <div class="carousel-caption">
+                  <p>
+                    Окунись в 1-ую Мировую!
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/inferno.png" alt="Inferno">
+                <div class="carousel-caption">
+                  <p>
+                    Inferno!<br> 
+                    В кино с 20.10.16
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/walkingdead.png" alt="Walking Dead">
+              </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div><!-- carousel -->
+        </div>
+      </div><!-- row -->
+      <hr>
+    </div><!--container-->
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-lg-push-3">
+            <!--Видимый Поиск только в мобильном режиме-->
+            <form id="queryForm" role="search" class="visible-xs">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default btn-lg" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                  </div>
+            </form>
+            <section>
+              <h2>Новые игры</h2>
+              <hr>
+              <div class="row">
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/batman.png" alt="Batman">
+                  <h4 class="film_label">Batman</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/call-of-duty.png" alt="Call of Duty: BO">
+                  <h4 class="film_label">Call of Duty: BO</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/rainbowsix.png" alt="Rainbow Six Patriots">
+                  <h4 class="film_label">Rainbow Six Patriots</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/witcher.png" alt="Witcher">
+                  <h4 class="film_label">Ведьмак</h4>
+                </div>
+              </div>
+              <div class="margin-40"></div>
+              <h2>Новые фильмы</h2>
+              <hr>
+              <div class="row">
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/inter.png" alt="Интерстеллар">
+                  <h4 class="film_label">Интерстеллар</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/matrix.png" alt="Матрица">
+                  <h4 class="film_label">Матрица</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/cloud.png" alt="Облачный атлас">
+                  <h4 class="film_label">Облачный атлас</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/max.png" alt="Безумный макс">
+                  <h4 class="film_label">Безумный макс</h4>
+                </div>
+              </div>
+              <div class="margin-40"></div>
+              <h2>Новые сериалы</h2> 
+              <hr>
+              <div class="row">
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/xfiles.png" alt="Секретные материалы">
+                  <h4 class="film_label">Секретные материалы</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/silicon.png" alt="Силиконовая долина">
+                  <h4 class="film_label">Силиконовая долина</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/dead.png" alt="Ходячие мертвецы">
+                  <h4 class="film_label">Ходячие мертвецы</h4>
+                </div>
+
+                <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                  <img src="img/breakingbad.png" alt="Во все тяжкие">
+                  <h4 class="film_label">Во все тяжкие</h4>
+                </div>
+              </div>
+              <div class="margin-40"></div>
+              <a href="#"><h3>Как снимали Интерстеллар</h3></a>
+              <hr>
+              <div class="clearfix">
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+                </p>
+                <a href="#" class="btn btn-warning pull-right">Читать</a>
+              </div>
+              <div class="margin-40"></div>
+              <a href="#"><h3>Актер Том Хэнкс поделился впечатлениями о фестивале</h3></a>
+              <hr>
+              <div class="clearfix">
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+                </p>
+                <a href="#" class="btn btn-warning pull-right">Читать</a>
+              </div>
+              <div class="margin-40"></div>
+            </section>
+          </div><!--col-lg-9-->
+          <div class="col-lg-3 col-lg-pull-9">
+            <aside>
+              <div class="panel panel-info hidden-xs">
+                <div class="panel-heading">
+                  <div class="sidebar-header">Поиск</div>
+                </div>
+                <div class="panel-body">
+                  <form role="search">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+                          <div class="input-group-btn">
+                            <button class="btn btn-default btn-lg" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                          </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <div class="sidebar-header">Вход</div>
+                </div>
+                <div class="panel-body">
+                    <form>
+                      <div class="form-group">
+                        <input type="login" class="form-control input-lg" placeholder="логин">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control input-lg" placeholder="пароль"> 
+                      </div>
+                      <button type="submit" class="btn btn-warning pull-right">Вход</button>
+                    </form>
+                </div>
+              </div>
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <div class="sidebar-header">Новости</div>
+                </div>
+                <div class="panel-body">
+                  <p>31.01.17</p>
+                  <p>Мы запустили новый сервис!</p>
+                </div>
+              </div>
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <div class="sidebar-header">Рейтинг фильмов</div>
+                </div>
+                <div class="panel-body">
+                  <ul class="list-group">
+                    <li class="list-group-item"><span class="badge">8.9</span>Интерстеллар</li>
+                    <li class="list-group-item"><span class="badge">8.7</span>Безумный Макс</li>
+                    <li class="list-group-item"><span class="badge">8.3</span>Матрица</li>
+                    <li class="list-group-item"><span class="badge">8.1</span>Облачный атлас</li>
+                    <li class="list-group-item"><span class="badge">8.9</span>Интерстеллар</li>
+                    <li class="list-group-item"><span class="badge">8.7</span>Секретные материалы</li>
+                    <li class="list-group-item"><span class="badge">8.3</span>Ходячие мертвецы</li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div><!--col-lg-3-->
+        </div><!--row-->
+      </div><!--container-->
+    </div><!--wrapper-->
+    <div class="clear"></div>
+    <footer>
+      <div class="container">
+        <p class="text-center"> <a href="http://wh-db.com/">Relaxer 2017</a></p>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
